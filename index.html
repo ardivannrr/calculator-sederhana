@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo-favicon.jpg" type="image/x-icon" />
+    <title>Calculator Sederhana</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>- Calculator -</h2>
+      <form action="" name="fform">
+        <label for="angka1">Masukkan Angka Pertama : </label>
+        <input type="number" name="angka1" id="angka1" />
+        <label for="angka2">Masukkan Angka Kedua : </label>
+        <input type="number" name="angka2" id="angka2" />
+        <label for="operator">Pilih Operator : </label>
+        <select name="operator" id="operator">
+          <option value="">Pilih</option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+          <option value="%">%</option>
+        </select>
+        <button type="button" onclick="operasi(event)">Hasil</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
